@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Pokedex </title>
+</head>
+
+<body>
+    <div class="appContainer">
+        <div class="app">
+
+            <div class="team">
+                <span class="teamTitle"> Equipo </span>
+                <div class="teamContainer">
+                    <!-- Codigo inyectado desde JS -->
+                </div>
+                <button class="teamCTA"> Reset </button>
+            </div>
+
+            <div class="card">
+                <div class="cardTop">
+                    <div class="cardRow">
+                        <span class="cardName"> Squirtle </span>
+                        <span class="cardId">#007</span>
+                    </div>
+                    <div class="cardRow">
+                        <span class="cardType"> Agua </span>
+                    </div>
+                </div>
+                <div class="cardBottom">
+                    <ul class="pokemonMovements">
+                        <li  id="move1"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="cardDesc">Squirtle es un Pokémon de tipo agua introducido en la primera generación. Es uno
+                        de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la
+                        región Kanto, junto a Bulbasaur y Charmander.</p>
+                    <a href="https://pokemon.fandom.com/es/wiki/Squirtle" class="cardLink">Mas Datos</a>
+                    <button class="cardCTA"> ¡Yo te elijo! </button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="searchBox">
+                    <input type="text" name="searchBar" id="searchBar">
+                    <button id="searchButton" class="searchButton" title="Buscar"> &#128270; </button>
+                </div>
+                <div id="pokemonListContainer" class="menuList" >
+                    <!-- Codigo Inyectado desde JS -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/data_v2.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
